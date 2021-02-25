@@ -796,7 +796,16 @@ class YoutubeDL(object):
             if not ie.working():
                 self.report_warning('The program functionality for this site has been marked as broken, '
                                     'and will probably not work.')
-
+            try:
+                temp_id = str_or_none(
+                    ie.extract_id(url) if callable(getattr(ie, 'extract_id', None))
+                    else ie._match_id(url))
+            except (AssertionError, IndexError, AttributeError):
+                temp_id = None
+            if temp_id is not None and self.in_download_archive({'id': temp_id, 'ie_key': ie_key}):
+                self.to_screen("[%s] %s: has already been recorded in archive" % (
+                               ie_key, temp_id))
+                break
             return self.__extract_info(url, ie, download, extra_info, process)
         else:
             self.report_error('no suitable InfoExtractor for URL %s' % url)
