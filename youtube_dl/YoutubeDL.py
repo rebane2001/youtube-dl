@@ -792,7 +792,8 @@ class YoutubeDL(object):
             if not ie.suitable(url):
                 continue
 
-            ie = self.get_info_extractor(ie.ie_key())
+            ie_key = ie.ie_key()
+            ie = self.get_info_extractor(ie_key)
             if not ie.working():
                 self.report_warning('The program functionality for this site has been marked as broken, '
                                     'and will probably not work.')
