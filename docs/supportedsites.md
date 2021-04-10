@@ -90,7 +90,8 @@
  - **bbc**: BBC
  - **bbc.co.uk**: BBC iPlayer
  - **bbc.co.uk:article**: BBC articles
- - **bbc.co.uk:iplayer:playlist**
+ - **bbc.co.uk:iplayer:episodes**
+ - **bbc.co.uk:iplayer:group**
  - **bbc.co.uk:playlist**
  - **BBVTV**
  - **Beatport**
@@ -462,6 +463,8 @@
  - **limelight**
  - **limelight:channel**
  - **limelight:channel_list**
+ - **LineLive**
+ - **LineLiveChannel**
  - **LineTV**
  - **linkedin:learning**
  - **linkedin:learning:course**
@@ -522,6 +525,7 @@
  - **mixcloud:playlist**
  - **mixcloud:user**
  - **MLB**
+ - **MLBVideo**
  - **Mnet**
  - **MNetTV**
  - **MoeVideo**: LetitBit video services: moevideo.net, playreplay.net and videochart.net
@@ -677,6 +681,9 @@
  - **OutsideTV**
  - **PacktPub**
  - **PacktPubCourse**
+ - **PalcoMP3:artist**
+ - **PalcoMP3:song**
+ - **PalcoMP3:video**
  - **pandora.tv**: 판도라TV
  - **ParamountNetwork**
  - **parliamentlive.tv**: UK parliament videos
@@ -1057,6 +1064,7 @@
  - **Vidbit**
  - **Viddler**
  - **Videa**
+ - **video.arnes.si**: Arnes Video
  - **video.google:search**: Google Video search
  - **video.sky.it**
  - **video.sky.it:live**
@@ -1212,4 +1220,6 @@
  - **ZDFChannel**
  - **Zhihu**
  - **zingmp3**: mp3.zing.vn
+ - **zingmp3:album**
+ - **zoom**
  - **Zype**
